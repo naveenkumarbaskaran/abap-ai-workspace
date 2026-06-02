@@ -1,4 +1,8 @@
-# ABAP Dev Workspace
+<p align="center">
+  <img src="assets/banner.svg" alt="abap-ai-workspace" width="800"/>
+</p>
+
+# abap-ai-workspace
 
 AI-assisted ABAP development workspace for VS Code + Claude Code.
 

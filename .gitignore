@@ -1,0 +1,27 @@
+# Personal secrets and tokens — never commit
+.claude/settings.json
+.claude/settings.local.json
+
+# Personal session memory
+.remember/
+
+# SAP session cookies (used by crawler)
+scripts/sap-session.json
+scripts/.sap-session-tmp.json
+scripts/sap-cookies.json
+
+# Node dependencies
+node_modules/
+package-lock.json
+
+# Playwright temp files
+.playwright-mcp/
+
+# Crawlee storage (used by deep-crawl.mjs)
+storage/
+
+# VS Code personal settings
+.vscode/settings.json
+
+# macOS
+.DS_Store

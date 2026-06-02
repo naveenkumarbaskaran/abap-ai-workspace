@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "ABAP",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.abap": "abap"
+    }
+  }
+}

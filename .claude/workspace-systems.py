@@ -18,6 +18,12 @@ def classify(name):
     return 'UNKNOWN'
 
 workspace_file = os.path.join(os.path.dirname(__file__), '..', 'ABAP.code-workspace')
+template_file  = os.path.join(os.path.dirname(__file__), '..', 'ABAP.code-workspace.template')
+
+if not os.path.exists(workspace_file):
+    hint = " Run: cp ABAP.code-workspace.template ABAP.code-workspace — then add your destination via Ctrl+Shift+P → ABAP: New Destination." if os.path.exists(template_file) else ""
+    print(json.dumps({"systemMessage": f"[ABAP] No workspace file found.{hint}"}))
+    sys.exit(0)
 
 try:
     with open(workspace_file) as f:
